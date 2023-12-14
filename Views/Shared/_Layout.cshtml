@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <link rel="stylesheet" href="~/assets/font/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="~/assets/css/gird.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header_navbar">
+                    <!-- logo -->
+                    <span class="header_navbar-logo">
+                        <a href="" class="header_navbar-logo--link">
+                            <img alt="" title="" src="~/assets/img/logo4.png" class="header_navbar-logo--btn">
+                        </a>
+                    </span>
+
+                    <ul class="header_navbar-list">
+
+                        @await Component.InvokeAsync("Post")
+                        
+                        <li class="header_navbar-item">
+                            <i class="header_navbar-item--icon fa-solid fa-arrow-right-from-bracket"></i>
+                            <a href="login.html" class="header_navbar-item-link">Đăng nhập</a>
+                        </li>
+                        <li class="header_navbar-item">
+                            <i class="header_navbar-item--icon fa-regular fa-user"></i>
+                            <a href="" class="header_navbar-item-link">Cá nhân</a>
+                        </li>
+                    </ul>
+                </nav>
+                @await Component.InvokeAsync("MenuView")
+
+
+
+            </div>
+        </header>
+        <div class="content">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-7">
+                        <!-- navigation menu -->
+                        <div class="navigation_menu">
+                            <span class="navigation-heding">Danh mục</span>
+                            <div class="avigation-body">
+                                <div class="navigation_menu-container">
+                                    <a href="denlanh.html" class="navigation-item">
+                                        <img src="~/assets/img/product/tải xuống.jpg" alt="" class="navigation-item--img">
+                                        <a href="" class="navigation-item-conten">Điện máy - điện lạnh</a>
+                                    </a>
+                                </div>
+
+                                <div class="navigation_menu-container">
+                                    <a href="banhoc.html" class="navigation-item">
+                                        <img src="~/assets/img/product/loi-ich-cua-ban-ghe-hoc-sinh-tieu-hoc-thong-minh.jpg" alt="" class="navigation-item--img">
+                                        <a href="" class="navigation-item-conten">Bàn ghế học</a>
+                                    </a>
+                                </div>
+                                <div class="navigation_menu-container">
+                                    <a href="noithat.html" class="navigation-item">
+                                        <img src="~/assets/img/product/images.png" alt="" class="navigation-item--img">
+                                        <a href="" class="navigation-item-conten">Nội thất</a>
+                                    </a>
+                                </div>
+                                <div class="navigation_menu-container">
+                                    <a href="phukien.html" class="navigation-item">
+                                        <img src="~/assets/img/product/images.jpg" alt="" class="navigation-item--img">
+                                        <a href="" class="navigation-item-conten">Phụ kiện thời trang</a>
+                                    </a>
+                                </div>
+                                <div class="navigation_menu-container">
+                                    <a href="sach.html" class="navigation-item">
+                                        <img src="~/assets/img/product/gettyimages-938171020-min.jpg" alt="" class="navigation-item--img">
+                                        <a href="sach.html" class="navigation-item-conten">Sách - tài liệu học tập</a>
+                                    </a>
+                                </div>
+                                <div class="navigation_menu-container">
+                                    <a href="dodientu.html" class="navigation-item">
+                                        <img src="~/assets/img/product/thiet-bi-dien-tu-la-gi-1-2.jpg" alt="" class="navigation-item--img">
+                                        <a href="" class="navigation-item-conten">Đồ điện tử</a>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col l-5">
+
+                        <!-- quang cao -->
+                        <div class="content-advertisement">
+                            <a href=""><img src="~/assets/img/banner-gia-si.png" alt="" class="content-advertisement-img"></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- container  -->
+                @RenderBody()
+
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4">
+                        <h3 class="footer_heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Shop</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Hưỡng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4">
+                        <h3 class="footer_heading">Giới thiệu </h3>
+
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Cửa hàng của chung toi</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Shops đồ cũ</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">bánh hàng online</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4">
+                        <h3 class="footer_heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4">
+                        <h3 class="footer_heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link"><i class="footer-item_link-icon fa-brands fa-facebook"></i> facebook</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link"><i class="footer-item_link-icon fa-brands fa-instagram"></i>Instagram</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link"><i class="footer-item_link-icon fa-brands fa-linkedin"></i>Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4">
+                        <h3 class="footer_heading">Vào cửa hành ứng dụng</h3>
+                        <div class="footer_download">
+                            <img src="~/assets/img/QR_code.png" alt="" class="footer_download-qr">
+                            <div class="footer_download-apps">
+                                <a href="" class="footer_download-apps-link">
+                                    <img src="~/assets/img/GooglePlay.png" alt="GooglePlay" class="footer_download-apps-img">
+                                </a>
+                                <a href="" class="footer_download-apps-link">
+                                    <img src="~/assets/img/Appstore.png" alt="Appstore" class="footer_download-apps-img">
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="grid">
+                    <p class="footer-text">© 2023 - Bản quyền thuộc nhóm 7</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

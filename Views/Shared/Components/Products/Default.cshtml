@@ -1,0 +1,25 @@
+﻿@model IList<Product>
+@using DO_AN_PTUD.Utilities;
+
+@foreach (var item in Model)
+{
+<a href="" class="col l-2-4 container_list">
+    <div class="container_item">
+        <img src="assets/img/product/noibat/sp2.jpg" alt="" class="container_item-img">
+        <h5 class="container_item-title">@item.Title</h5>
+        <div class="container_item-pice">
+            <span class="container_item-pice-seal">@item.Price</span>
+            <span class="container_item-pice-curent">@item.Discount</span>
+            <span class="container_item-pice-size">@item.Quantity</span>
+        </div>
+        <span class="container_item-hot">Yêu thích</span>
+        <div class="gift_pro yep" bis_skin_checked="1">
+
+
+            <img width="32" height="32" alt="Khuyến mãi" src="//bizweb.dktcdn.net/100/488/001/themes/910675/assets/gift.gif?1689676264018">
+            Có <span> 3 </span> lựa chọn quà tặng khi mua hàng
+
+        </div>
+    </div>
+</a>
+}

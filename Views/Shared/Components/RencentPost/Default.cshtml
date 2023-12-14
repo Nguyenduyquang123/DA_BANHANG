@@ -1,0 +1,29 @@
+﻿@using DO_AN_PTUD.Models;
+@using DO_AN_PTUD.Utilities;
+@model IList<Post>
+
+<div class="col l-12">
+    <div class="homes" style="background-color:white;  margin-top:20px;">
+        <h1 style="color:#555; border-bottom: 1px solid #9999; padding:20px;" >Thông báo mới</h1>
+
+    @foreach(var item in Model)
+    {
+    <div class="news ">
+            <a href="#" class="news-item">
+            <div class="item-img">
+                <img src="@item.Images" alt="" class="news-img">
+            </div>
+            <div class="item-content">
+                <h1 class="news-titile">@item.Title</h1>
+                <p class="news-date">@item.CreationDate</p>
+                <p class="news-content">@item.Contents</p>
+            </div>
+        </a>
+            
+    </div>
+     }
+
+    </div>
+
+
+</div>
